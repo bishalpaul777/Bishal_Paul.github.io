@@ -745,3 +745,14 @@
     width: 185px;
   }
 }
+
+.bishalform{
+  align-item: center;
+  display: block;
+  
+}
+.bishalinput{
+  color: #0000;
+  outline: none;
+  border-radius: 10px;
+}
