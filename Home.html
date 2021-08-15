@@ -229,21 +229,38 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
           <div class="u-container-layout u-valign-bottom-lg u-valign-bottom-md u-valign-bottom-sm u-valign-bottom-xl u-container-layout-1">
             <h1 class="u-text u-text-body-alt-color u-text-1">Contac​t ​Me</h1>
             <div class="u-align-left u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-form u-form-1">
-              <form name="contact" method="POST" data-netlify="true">
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>   
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
- 
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
+              <form
+    name="simpleContactForm"
+    method="POST"
+    data-netlify="true"
+    data-netlify-recaptcha="true"
+    id="simple-contact-form"
+    class="contact-form"
+>
+    <p class="form-row">
+        <label id="contact-form-name-label" for="contact-form-name" class="form-label">Name</label>
+        <input type="text" name="name" id="contact-form-name" aria-labelledby="contact-form-name-label" class="form-input" />
+    </p>
+    <p class="form-row">
+        <label id="contact-form-email-label" for="contact-form-email" class="form-label">Email address</label>
+        <input type="email" name="email" id="contact-form-email" aria-labelledby="contact-form-email-label" class="form-input" />
+    </p>
+    <p class="form-row">
+        <label id="contact-form-message-label" for="contact-form-message" class="form-label">Message</label>
+        <textarea
+            name="message"
+            id="contact-form-message"
+            aria-labelledby="contact-form-message-label"
+            class="form-textarea"
+            rows="7"
+        ></textarea>
+    </p>
+    <div data-netlify-recaptcha="true" class="form-row"></div>
+    <p class="form-row form-submit">
+        <button type="submit" class="button">Send Message</button>
+    </p>
 </form>
+
             </div>
           </div>
         </div>
