@@ -749,7 +749,7 @@
 
 .divform{
 	display: block;
-    margin: auto;
+    margin-left: 40%;
     width: 50%;
   	padding: 10px;
 }
@@ -757,23 +757,26 @@
 	margin-bottom: 40px;
     font-size: 31px;
     font-family: 'Ubuntu', sans-serif;
-    margin-left: 50px;
+    margin-left: 10px;
 }
 .bishalinput{
-	paddding: 40px;
+	padding: 20px;
     outline: none;
     border-radius: 20px;
     width: 250px;
     height: 30px;
+    color: black;
 }
 .bishalmessage{
 	width: 250px;
     height: 80px;
     border-radius: 10px;
+    color: black;
+    padding: 20px;
 }
 .submitarea{
 	display: block;
-    margin-left: 90px;
+    margin-left: 50px;
     width: 20%;
     padding: 10px;
     background-color: #000000;
@@ -781,4 +784,27 @@
     outline: none;
     border: none;
     border-radius: 10px;
+    text-transform: uppercase;
+}
+.submitarea:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+@media (max-width: 567px){
+  .divform{
+    margin-left: 30px;
+  }
+  .con{
+    font-size: 18px;
+    width: 100%;
+  }
+  .submitarea{
+    width: 100%;
+    padding:  10px;
+  }
+  .submitarea:hover{
+    background-color:  white;
+    color: black;
+  }
 }
